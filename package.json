@@ -1,0 +1,43 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Creating a new version of my personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremgg/My-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "integrateur",
+    "css",
+    "html",
+    "php"
+  ],
+  "author": "Jérémy Grégoire",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremgg/My-portfolio/issues"
+  },
+  "homepage": "https://github.com/jeremgg/My-portfolio#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "del": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-header": "^2.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.3.1",
+    "jquery.easing": "^1.4.1",
+    "modernizr": "^3.5.0"
+  }
+}

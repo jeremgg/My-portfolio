@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?fr2ml2');
+  src:  url('icomoon.eot?fr2ml2#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?fr2ml2') format('truetype'),
+    url('icomoon.woff?fr2ml2') format('woff'),
+    url('icomoon.svg?fr2ml2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fa:before {
+  content: "\e909";
+}
+.icon-font-awesome:before {
+  content: "\e909";
+}
+.icon-mysql:before {
+  content: "\e90b";
+  color: #4479a1;
+}
+.icon-php:before {
+  content: "\e90a";
+  color: #777bb4;
+}
+.icon-sublimetext:before {
+  content: "\e908";
+}
+.icon-atom:before {
+  content: "\e907";
+  color: #66595c;
+}
+.icon-javascript:before {
+  content: "\e906";
+  color: #f7df1e;
+}
+.icon-css3:before {
+  content: "\e904";
+  color: #1572b6;
+}
+.icon-html5:before {
+  content: "\e905";
+  color: #e34f26;
+}
+.icon-sass:before {
+  content: "\e903";
+  color: #c69;
+}
+.icon-jquery:before {
+  content: "\e902";
+  color: #0769ad;
+}
+.icon-bootstrap:before {
+  content: "\e901";
+  color: #563d7c;
+}
+.icon-gulp:before {
+  content: "\e900";
+  color: #da4648;
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-cogs:before {
+  content: "\e995";
+}
+.icon-hammer:before {
+  content: "\e996";
+}
+.icon-wordpress:before {
+  content: "\eab4";
+}
+.icon-css32:before {
+  content: "\eae6";
+}
+.icon-svg:before {
+  content: "\eae9";
+}
+.icon-IcoMoon:before {
+  content: "\eaea";
+}
