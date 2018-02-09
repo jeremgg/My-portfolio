@@ -60,7 +60,6 @@
 			duration: 1300,
 			easing: 'linear',
 			backgroundColor: (t,i) => {
-				console.log('here')
 				if ( i === 0 ) return '#0d0f1f';
 			},
 			fill: (t,i) => {

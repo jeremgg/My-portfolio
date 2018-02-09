@@ -119,3 +119,68 @@ main {
     color: #0d0f1f; }
   .content-intro .content-inner .enter span {
     display: inline-block; }
+
+/* =============================
+	           RS
+============================= */
+.rs {
+  position: absolute;
+  display: none;
+  right: 1.8em;
+  bottom: 0;
+  z-index: 10;
+  width: 40%;
+  height: 100px;
+  margin: 0;
+  filter: url("../index.html#goo"); }
+
+@media only screen and (min-width: 768px) {
+  .rs {
+    display: block; }
+    .rs.hide {
+      display: none; }
+    .rs.show {
+      display: block; } }
+
+/* =============================
+	     BUTTON TOGGLE
+============================= */
+.rs-button, .rs-toggle-button {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  color: #d6d9ee;
+  text-align: center;
+  cursor: pointer;
+  background: #0d0f1f;
+  border: none;
+  border-radius: 50%;
+  outline: none; }
+  .rs-button:focus, .rs-toggle-button:focus {
+    outline: none; }
+
+.rs-toggle-button {
+  z-index: 10;
+  font-size: 1.5em; }
+
+.rs-button {
+  font-size: 2em;
+  transform: scale(0.95, 0.95); }
+  .rs-button:hover {
+    font-size: 2.5em;
+    color: #d6d9ee; }
+
+/* =============================
+	      RS ITEMS
+============================= */
+.rs-items {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.rs-item {
+  display: block; }

@@ -22,6 +22,20 @@
     </head>
 
     <body>
+        <!-- SVG ICONS -->
+        <svg class="hidden" xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
+
+
+
+        <!-- CONTENT -->
 		<main>
 			<div class="content content-intro">
 
@@ -45,6 +59,60 @@
             <div class="content content-fixed">
 				<div class="content-inner">
 
+                    <!-- SOCIAL MEDIA -->
+                    <div class="rs">
+                        <!-- button toggle -->
+                        <button class="rs-toggle-button">
+            				<i class="rs-icon fa fa-share-alt"></i>
+            			</button>
+
+
+                        <!-- rs items -->
+            			<ul class="rs-items">
+
+                            <!-- items 1 -->
+                            <li class="rs-item">
+            					<a href="#" class="rs-button">
+            						<i class="rs-icon fa fa-github"></i>
+            					</a>
+            				</li>
+
+                            <!-- items 2 -->
+                            <li class="rs-item">
+            					<a href="#" class="rs-button">
+            						<i class="rs-icon fa fa-dribbble"></i>
+            					</a>
+            				</li>
+
+            				<!-- items 3 -->
+                            <li class="rs-item">
+            					<a href="#" class="rs-button">
+            						<i class="rs-icon fa fa-behance"></i>
+            					</a>
+            				</li>
+
+                            <!-- items 4 -->
+            				<li class="rs-item">
+            					<a href="#" class="rs-button">
+            						<i class="rs-icon fa fa-pinterest"></i>
+            					</a>
+            				</li>
+
+            				<!-- items 5 -->
+            				<li class="rs-item">
+            					<a href="#" class="rs-button">
+            						<i class="rs-icon fa fa-twitter"></i>
+            					</a>
+            				</li>
+
+            				<!-- items 6 -->
+            				<li class="rs-item">
+            					<a href="#" class="rs-button">
+            						<i class="rs-icon fa fa-envelope"></i>
+            					</a>
+            				</li>
+            			</ul><!-- ./rs-items -->
+            		</div><!-- ./rs -->
 				</div><!-- ./content-inner -->
 			</div><!-- ./content content-fixed -->
         </main>
@@ -53,7 +121,7 @@
 
 
         <!-- SCRIPT -->
-        <script type="text/javascript" src="js/vendor/jquery/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery.easing/jquery.easing.min.js"></script>
         <script type="text/javascript" src="js/vendor/modernizr.custom.79639.js"></script>
 
@@ -65,6 +133,9 @@
 
         <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
 		<script type="text/javascript" src="js/morphing.js"></script>
+
+        <script type="text/javascript" src="js/vendor/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
 
         <script type="text/javascript" src="js/main.js"></script>
     </body>
