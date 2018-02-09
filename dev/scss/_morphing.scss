@@ -1,0 +1,106 @@
+/* ===========================
+		 PAGES CONTENT
+=========================== */
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .content-inner{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+/* ===========================
+	   BLOC TRANSITION
+=========================== */
+.content-intro .shape-wrap{
+    position: relative;
+    z-index: 10;
+    margin: -5px 0 0 0; /* Hide the gap */
+
+    .shape{
+        display: block;
+        width: 100%;
+        height: 100vh;
+
+        fill: $color-theme;
+    }
+}
+
+
+
+
+
+/* ===========================
+		  BLOC TOP
+=========================== */
+.content-intro{
+    z-index: 100;
+    height: 200vh;
+
+    .content-inner{
+        background: $color-theme;
+    }
+}
+
+
+
+
+
+/* ===========================
+		  BLOC BOTTOM
+=========================== */
+.content-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $color-white;
+}
+
+
+
+
+
+/* ===========================
+		  BTN ENTER
+=========================== */
+.content-intro .content-inner .enter{
+    margin: 6vh 0 0 0;
+    font-family: $intro-font-family;
+    font-size: 1em;
+    font-weight: bold;
+    color: $color-white;
+    letter-spacing: 3px;
+    white-space: pre;
+    pointer-events: auto;
+    cursor: pointer;
+
+    &:hover, &:focus{
+        color: $color-theme;
+    }
+
+    span{
+        display: inline-block;
+    }
+}

@@ -1,32 +1,52 @@
-// Variables
+.clearfix:before, .clearfix:after{
+    content: '';
+    display: table;
+}
 
-/* =============================
-		    CONTAINER SKILLS
-============================= */
-$color-theme: #0d0f1f !default;
-$color-light: lighten($color-theme, 65%);
-$color-white: lighten($color-theme, 80%);
-$color-inverse: #e0bd79;
-$white: #ffffff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000000 !default;
-$primary: #1d809f !default;
-$secondary: #ecb807 !default;
+.clearfix:after{
+    clear: both;
+}
+
+body{
+    color: $color-white;
+    background: $color-theme;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.btn-primary{
+    color: $color-white;
+    background-color: $color-theme;
+    border-color: $color-theme;
+
+    &:hover{
+        color: $color-white;
+        background-color: lighten($color-theme, 15%);
+        border-color: lighten($color-theme, 15%);
+    }
+    &:focus, &.focus, &:active{
+        box-shadow: none;
+    }
+
+    &.disabled, &:disabled{
+        background-color: lighten($color-theme, 15%);
+        border-color: lighten($color-theme, 15%);
+    }
+    &:not([disabled]):not(.disabled):active, &:not([disabled]):not(.disabled).active, .show > &.dropdown-toggle{
+        color: #ffffff;
+        background-color: lighten($color-theme, 15%);
+        border-color: lighten($color-theme, 15%);
+    }
+    &:not([disabled]):not(.disabled):active:focus, &:not([disabled]):not(.disabled).active:focus, .show > &.dropdown-toggle:focus{
+        box-shadow: none;
+    }
+}
 
 
-
-
-/* ===================================
-              	FONT
-=================================== */
-$font-family-primary: 'agendaregular';
-$font-family-secondary: 'Gloria Hallelujah', cursive;
-$font-family-third: 'Anton', sans-serif;
+svg.hidden{
+    display: none;
+}

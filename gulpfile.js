@@ -57,9 +57,7 @@ gulp.task('csscomb', function(){
 
 //HEADER CONTENT FILES
 var banner = ['/*!\n',
-    ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-    ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
+    ' * Site web personnel of jérémy Grégoire - \n',
     ' */\n',
     ''
 ].join('');
