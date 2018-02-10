@@ -1,0 +1,41 @@
+.menu-trigger{
+    position: fixed;
+    top: $menu-trigger-top;
+    left: $menu-trigger-left;
+    width: $menu-trigger-size;
+    height: $menu-trigger-size;
+}
+
+@media screen and (max-width: 992px){
+    .menu-trigger{
+        z-index: 1002;
+    }
+}
+
+
+
+.menu-trigger{
+    .menu-circle{
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        background-color: $color-theme;
+        border-radius: 50%;
+        transition: all $menu-circle-duration cubic-bezier(.19, 1, .22, 1);
+    }
+
+    &:hover .menu-circle{
+        transform: scale(1.5);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-trigger{
+        position: absolute;
+
+        &.active .menu-circle{
+            transform: scale(60);
+        }
+    }
+}

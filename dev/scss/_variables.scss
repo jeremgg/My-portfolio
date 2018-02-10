@@ -1,8 +1,6 @@
 // Variables
 
-/* =============================
-		    CONTAINER SKILLS
-============================= */
+//CONTAINER SKILLS
 $color-theme: #0d0f1f !default;
 $color-light: lighten($color-theme, 65%);
 $color-white: lighten($color-theme, 80%);
@@ -24,10 +22,28 @@ $secondary: #ecb807 !default;
 
 
 
-/* ===================================
-              	FONT
-=================================== */
+//TRANSITION / ANIMATION
+$nav-overlay-duration: .2s;
+$nav-overlay-active-duration: .3s;
+$menu-circle-duration: .5s;
+$menu-line-duration: .25s;
+
+
+
+
+//FONT
 $font-family-primary: 'agendaregular';
 $font-family-secondary: 'Gloria Hallelujah', cursive;
 $font-family-third: 'Anton', sans-serif;
 $intro-font-family: $font-family-primary;
+$nav-links-font-family: $font-family-secondary;
+
+
+
+
+//NAV
+$menu-trigger-size: 3em;
+$menu-trigger-top: 1.2em;
+$menu-trigger-left: 1.2em;
+$menu-toggle-size: 3em;
+$menu-toggle-line-height: 3em;

@@ -1,0 +1,80 @@
+/* ===========================
+        BUTTON TRIGGER
+=========================== */
+.menu-trigger .menu-toggle{
+    position: fixed;
+    z-index: 1002;
+    width: $menu-toggle-size;
+    height: $menu-toggle-size;
+    line-height: $menu-toggle-line-height;
+    color: $color-white;
+    text-align: center;
+    background: $color-theme;
+
+    &.rounded{
+        border-radius: 100% !important;
+    }
+
+    &:hover{
+        color: $color-white;
+        background: $color-theme;
+    }
+}
+
+
+
+
+
+/* ===========================
+      BUTTON TRIGGER ICON
+=========================== */
+.menu-trigger .menu-toggle .menu-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 1px;
+    left: 0;
+    width: 20px;
+    height: 14px;
+    margin: auto;
+}
+
+
+.menu-trigger .menu-toggle .menu-icon .menu-line{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-white;
+    border-radius: 2px;
+    transition: all $menu-line-duration cubic-bezier(.175, .885, .32, 1.275);
+
+    &.menu-line-1{
+        top: 0;
+    }
+
+    &.menu-line-2{
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    &.menu-line-3{
+        bottom: 0;
+    }
+}
+
+
+.menu-trigger.active .menu-toggle .menu-icon .menu-line{
+    &.menu-line-1{
+        transform: translateY(7px) translateY(-50%) rotate(-135deg);
+    }
+
+    &.menu-line-2{
+        opacity: 0;
+    }
+
+    &.menu-line-3{
+        transform: translateY(-7px) translateY(50%) rotate(135deg);
+    }
+}
