@@ -307,3 +307,83 @@ main {
   margin: 0;
   list-style: none;
   align-items: center; }
+
+/* ===========================
+           NAV LINKS
+=========================== */
+.menu-overlay .menu-nav {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .menu-overlay .menu-nav .menu-item {
+    position: relative;
+    display: block;
+    margin: 1.5em 0;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1;
+    color: #d6d9ee;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none; }
+    .menu-overlay .menu-nav .menu-item:first-child {
+      margin-top: 0; }
+    .menu-overlay .menu-nav .menu-item:last-child {
+      margin-bottom: .8em; }
+    .menu-overlay .menu-nav .menu-item:hover, .menu-overlay .menu-nav .menu-item:focus {
+      color: #d6d9ee; }
+    .menu-overlay .menu-nav .menu-item:hover .menu-item-name::after, .menu-overlay .menu-nav .menu-item:focus .menu-item-name::after {
+      content: '';
+      transform: scale3d(1, 1, 1); }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 660px) and (-webkit-min-device-pixel-ratio: 2) {
+    .menu-overlay .menu-nav .menu-item {
+      font-size: 1.25em; } }
+
+@media only screen and (min-width: 768px) {
+  .menu-overlay .menu-nav {
+    overflow-y: hidden; }
+    .menu-overlay .menu-nav .menu-item {
+      margin: 1em 0;
+      font-size: 1.75em; } }
+
+/* ===========================
+        NAV LINK TEXT
+=========================== */
+.menu-overlay .menu-nav .menu-item-name {
+  position: relative;
+  display: block;
+  padding: .5em 0 0 0;
+  white-space: pre; }
+  .menu-overlay .menu-nav .menu-item-name::before, .menu-overlay .menu-nav .menu-item-name::after {
+    content: '';
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(66, 76, 157, 0.1); }
+  .menu-overlay .menu-nav .menu-item-name::after {
+    background: #d6d9ee;
+    transition: all .5s;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 100% 50%; }
+  .menu-overlay .menu-nav .menu-item-name span {
+    position: relative;
+    display: inline-block;
+    left: 0; }
+
+@media only screen and (min-width: 768px) {
+  .menu-overlay .menu-nav .menu-item-name {
+    display: flex;
+    padding: .75em 0 0 0;
+    flex-wrap: wrap; }
+    .menu-overlay .menu-nav .menu-item-name::before, .menu-overlay .menu-nav .menu-item-name::after {
+      top: 68%;
+      width: 50%; }
+    .menu-overlay .menu-nav .menu-item-name span {
+      left: 50%; }
+      .menu-overlay .menu-nav .menu-item-name span:first-child {
+        padding-left: .5em; } }

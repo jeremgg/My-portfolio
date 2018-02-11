@@ -1,0 +1,117 @@
+/* ===========================
+           NAV LINKS
+=========================== */
+.menu-overlay .menu-nav{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .menu-item{
+        position: relative;
+        display: block;
+        margin: 1.5em 0;
+        font-family: $nav-links-font-family;
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline: none;
+
+        &:first-child{
+            margin-top: 0;
+        }
+
+        &:last-child{
+            margin-bottom: .8em;
+        }
+
+        &:hover, &:focus{
+            color: $color-white;
+        }
+
+        &:hover .menu-item-name::after, &:focus .menu-item-name::after{
+            content: '';
+            transform: scale3d(1,1,1);
+        }
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 660px) and (-webkit-min-device-pixel-ratio : 2){
+        .menu-item{
+            font-size: 1.25em;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .menu-overlay .menu-nav{
+        overflow-y: hidden;
+
+        .menu-item{
+            margin: 1em 0;
+            font-size: 1.75em;
+        }
+    }
+}
+
+
+
+
+
+/* ===========================
+        NAV LINK TEXT
+=========================== */
+.menu-overlay .menu-nav .menu-item-name{
+    position: relative;
+    display: block;
+    padding: .5em 0 0 0;
+    white-space: pre;
+
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        top: 130%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: rgba(lighten($color-theme, 35%), .1);
+    }
+
+    &::after{
+        background: $color-white;
+        transition: all .5s;
+        transform: scale3d(0,1,1);
+        transform-origin: 100% 50%;
+    }
+
+    span{
+        position: relative;
+        display: inline-block;
+        left: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .menu-overlay .menu-nav .menu-item-name{
+        display: flex;
+        padding: .75em 0 0 0;
+
+        flex-wrap: wrap;
+
+        &::before, &::after{
+            top: 68%;
+            width: 50%;
+        }
+
+        span{
+            left: 50%;
+
+            &:first-child{
+                padding-left: .5em;
+            }
+        }
+    }
+}
