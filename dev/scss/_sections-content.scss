@@ -1,0 +1,33 @@
+/* =============================
+       BACKGROUND SECTIONS
+============================= */
+.sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide{
+    /* First Slide */
+    &.bg-1 .sl-slide-inner, .sl-content-slice{
+        background: $color-white;
+    }
+
+
+    /* Second Slide */
+    &.bg-2 .sl-slide-inner, .sl-content-slice{
+        background: $color-theme;
+    }
+
+
+    /* Third Slide */
+    &.bg-3 .sl-slide-inner, .sl-content-slice{
+        background: $color-light;
+    }
+
+
+    /* Fourth Slide */
+    &.bg-4 .sl-slide-inner, .sl-content-slice{
+        background: $color-inverse;
+    }
+
+
+    /* Fifth Slide */
+    &.bg-5 .sl-slide-inner, .sl-content-slice{
+        background: $gray-600;
+    }
+}

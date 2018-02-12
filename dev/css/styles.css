@@ -387,3 +387,117 @@ main {
       left: 50%; }
       .menu-overlay .menu-nav .menu-item-name span:first-child {
         padding-left: .5em; } }
+
+body > .container {
+  height: 100%; }
+
+/* =============================
+		WRAPPER SECTIONS
+============================= */
+.sl-slider-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+/* =============================
+	   CONTENTS SECTIONS
+============================= */
+.sl-slider-wrapper .sl-slider {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.sl-slider-wrapper .sl-slide, .sl-slider-wrapper .sl-slides-wrapper, .sl-slider-wrapper .sl-slide-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.sl-slider-wrapper .sl-slide {
+  z-index: 1; }
+
+/* =============================
+	   DUPLICATE SECTIONS
+============================= */
+.sl-slider-wrapper .sl-content-slice {
+  position: absolute;
+  box-sizing: content-box;
+  overflow: hidden;
+  background: #d6d9ee;
+  opacity: 1;
+  backface-visibility: hidden; }
+
+/* =============================
+         HORIZONTAL SLICE
+============================= */
+.sl-slider-wrapper .sl-slide-horizontal .sl-content-slice {
+  left: -200px;
+  width: 100%;
+  height: 50%;
+  transform: translateY(0%) scale(1); }
+  .sl-slider-wrapper .sl-slide-horizontal .sl-content-slice:first-child {
+    top: -200px;
+    padding: 200px 200px 0px 200px; }
+  .sl-slider-wrapper .sl-slide-horizontal .sl-content-slice:nth-child(2) {
+    top: 50%;
+    padding: 0px 200px 200px 200px; }
+
+/* =============================
+		 VERTICAL SLICE
+============================= */
+.sl-slider-wrapper .sl-slide-vertical .sl-content-slice {
+  top: -200px;
+  width: 50%;
+  height: 100%;
+  transform: translateX(0%) scale(1); }
+  .sl-slider-wrapper .sl-slide-vertical .sl-content-slice:first-child {
+    left: -200px;
+    padding: 200px 0px 200px 200px; }
+  .sl-slider-wrapper .sl-slide-vertical .sl-content-slice:nth-child(2) {
+    left: 50%;
+    padding: 200px 200px 200px 0px; }
+
+/* =============================
+        CONTENT WRAPPER
+============================= */
+/* Width and height is set dynamically */
+.sl-content-wrapper {
+  position: absolute; }
+  .sl-content-wrapper .sl-content {
+    width: 100%;
+    height: 100%;
+    background: #d6d9ee; }
+
+/* =============================
+       BACKGROUND SECTIONS
+============================= */
+.sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-1 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-1 .sl-content-slice, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-3 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-3 .sl-content-slice, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-4 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-4 .sl-content-slice, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-5 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-5 .sl-content-slice {
+  background: #d6d9ee; }
+
+.sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-2 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-2 .sl-content-slice {
+  background: #0d0f1f; }
+
+/* =============================
+       BACKGROUND SECTIONS
+============================= */
+.sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide {
+  /* First Slide */
+  /* Second Slide */
+  /* Third Slide */
+  /* Fourth Slide */
+  /* Fifth Slide */ }
+  .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-1 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
+    background: #d6d9ee; }
+  .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-2 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
+    background: #0d0f1f; }
+  .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-3 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
+    background: #a0a6d7; }
+  .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-4 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
+    background: #e0bd79; }
+  .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-5 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
+    background: #868e96; }
