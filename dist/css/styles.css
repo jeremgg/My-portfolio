@@ -496,8 +496,682 @@ body > .container {
   .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-2 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
     background: #0d0f1f; }
   .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-3 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
-    background: #a0a6d7; }
+    background: #d6d9ee; }
   .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-4 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
     background: #e0bd79; }
   .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide.bg-5 .sl-slide-inner, .sl-slider-wrapper .sl-slider .sl-slides-wrapper .sl-slide .sl-content-slice {
     background: #868e96; }
+
+/* =============================
+		CONTAINER SKILLS
+============================= */
+#skills .sl-slide-inner > .row {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  align-items: center; }
+
+/* =============================
+	  SKILLS CONTENT BLOCK
+============================= */
+#skills .sl-slide-inner > .row .s-skills {
+  float: left;
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+
+/* =============================
+	 MORPH BUTTON CONTAINER
+============================= */
+#skills .s-skills .morph-button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto; }
+
+#skills .s-skills.active .morph-button {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto; }
+
+/* =============================
+	      MORPH BUTTON
+============================= */
+#skills .s-skills .morph-button > button {
+  position: relative;
+  z-index: 1000;
+  width: 15em;
+  height: 2.5em;
+  padding: 0;
+  overflow: hidden;
+  font-family: "agendaregular";
+  font-weight: 700;
+  color: #d6d9ee;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #0d0f1f;
+  border: none;
+  outline: none;
+  transition: opacity .1s .5s; }
+
+#skills .s-skills .morph-button.open > button {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .1s; }
+
+#skills .s-skills .morph-button.active > button {
+  z-index: 2000; }
+
+/* =============================
+	  MORPH CONTENT BLOCK
+============================= */
+#skills .s-skills .morph-button > .morph-content {
+  position: fixed;
+  z-index: 900;
+  width: 15em;
+  height: 2.5em;
+  overflow: hidden;
+  color: #a0a6d7;
+  pointer-events: none;
+  background-color: #0d0f1f;
+  border-radius: .25rem;
+  opacity: 0;
+  transition: opacity .3s .75s, width .4s .25s, height .4s .25s, top .4s .25s, left .4s .25s, margin .4s .25s; }
+
+#skills .s-skills .morph-button.open > .morph-content {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  pointer-events: auto;
+  background-size: cover;
+  border-radius: 0;
+  opacity: 1;
+  transition: background-image .4s .1s, width .4s .1s, height .4s .1s, top .4s .1s, left .4s .1s, margin .4s .1s; }
+
+#skills .s-skills .morph-button.active .morph-content {
+  z-index: 1900; }
+
+/* =============================
+	  MORPH CONTENT BLOCK
+============================= */
+#skills .s-skills .morph-button .morph-content > div {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s, visibility 0s .1s, height 0s .1s; }
+
+#skills .s-skills .morph-button.open .morph-content > div {
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .3s .3s; }
+
+/* =================================
+	 ANIMATION MODAL BLOCK LEFT
+================================= */
+#skills .morph-button .s-modal-content .s-modal-left > .row {
+  transition: transform .2s .2s;
+  transform: scale(0); }
+
+#skills .morph-button.open .s-modal-content .s-modal-left > .row {
+  transform: scale(1); }
+
+/* =================================
+	 ANIMATION MODAL BUTTON CLOSE
+================================= */
+#skills .morph-button .s-modal-content .modal-close:after {
+  transition: transform .2s .35s;
+  transform: translateX(100%); }
+
+#skills .morph-button .s-modal-content .modal-close .icon-close {
+  opacity: 0;
+  transition: opacity .15s .5s; }
+
+#skills .morph-button.open .s-modal-content-1 .modal-close:after {
+  transform: translateX(0); }
+
+#skills .morph-button.open .s-modal-content-1 .modal-close .icon-close {
+  opacity: 1; }
+
+/* =================================
+	  ANIMATION MODAL CHAPTER
+================================= */
+#skills .morph-button .s-modal-content .s-modal-right .modal-chapter:before {
+  transition: transform .2s .6s;
+  transform: translateX(-100%); }
+
+#skills .morph-button .s-modal-content .s-modal-right .modal-chapter > span {
+  opacity: 0;
+  transition: opacity .15s .75s; }
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-chapter:before {
+  transform: translateX(0); }
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-chapter > span {
+  opacity: 1; }
+
+/* =================================
+	   ANIMATION MODAL TITLE
+================================= */
+#skills .morph-button .s-modal-content .s-modal-right .modal-title > h2 span:nth-child(1) {
+  transition: transform .3s .95s;
+  transform: scaleX(0); }
+
+#skills .morph-button .s-modal-content .s-modal-right .modal-title > h2 span:nth-child(2) {
+  opacity: 0;
+  transition: opacity .25s 1.2s; }
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-title > h2 span:nth-child(1) {
+  transform: scaleX(1); }
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-title > h2 span:nth-child(2) {
+  opacity: 1; }
+
+/* =================================
+	    ANIMATION MODAL TEXT
+================================= */
+#skills .morph-button .s-modal-content .s-modal-right .modal-content > p {
+  opacity: 0;
+  transition: opacity .2s 1.3s; }
+  #skills .morph-button .s-modal-content .s-modal-right .modal-content > p:first-child {
+    transition-delay: 1.45s; }
+  #skills .morph-button .s-modal-content .s-modal-right .modal-content > p:nth-child(2) {
+    transition-delay: 1.6s; }
+  #skills .morph-button .s-modal-content .s-modal-right .modal-content > p:nth-child(3) {
+    transition-delay: 1.75s; }
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-content > p {
+  opacity: 1; }
+
+/* =================================
+	    ANIMATION MODAL LIB
+================================= */
+#skills .morph-button .s-modal-content .s-modal-right .modal-content h4 {
+  opacity: 0;
+  transition: opacity .2s 1.9s, transform .2s 1.9s;
+  transform: scaleX(0); }
+
+#skills .morph-button .s-modal-content .s-modal-right .modal-content .libs > div {
+  opacity: 0;
+  transition: opacity .15s 2.05s, transform .15s 2.05s;
+  transform: scale(0); }
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-content h4 {
+  opacity: 1;
+  transform: scaleX(1); }
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-content .libs > div {
+  opacity: 1;
+  transform: scale(1); }
+
+/* =============================
+      SKILL CONTENT BLOCK
+============================= */
+#skills .s-intro .s-intro-left, #skills .s-intro .s-intro-right {
+  float: left;
+  height: 100%;
+  padding: 0; }
+
+#skills .s-intro .s-intro-left {
+  display: none;
+  background-image: url(../img/skills-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#skills .s-intro .s-intro-right {
+  display: flex;
+  padding: 0 1em;
+  padding-top: 8em;
+  padding-bottom: 4.5em;
+  align-items: center; }
+
+@media only screen and (max-height: 430px) {
+  #skills .s-intro .s-intro-right {
+    padding-top: 2em;
+    align-items: inherit; } }
+
+@media only screen and (max-width: 767px) {
+  #skills .s-intro .s-intro-right {
+    overflow-y: auto; } }
+
+@media only screen and (min-width: 768px) {
+  #skills .s-intro .s-intro-left {
+    display: block; }
+  #skills .s-intro .s-intro-right {
+    padding-top: 0;
+    padding-left: 2em; } }
+
+/* ================================
+     SKILL CONTENT BLOCK RIGHT
+================================ */
+#skills .s-intro .s-intro-right .s-intro-content {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 768px) {
+  #skills .s-intro .s-intro-right .s-intro-content {
+    margin-top: 0; } }
+
+@media only screen and (min-width: 992px) {
+  #skills .s-intro .s-intro-right .s-intro-content {
+    width: 75%;
+    margin: 0; } }
+
+#skills .s-intro .s-intro-right .s-intro-content h1 {
+  margin-bottom: 1.15em;
+  font-family: "Anton", sans-serif;
+  font-size: 2.25em;
+  color: #0d0f1f;
+  animation: skillsMoveUp 1s ease-in-out 1s both; }
+  #skills .s-intro .s-intro-right .s-intro-content h1:after {
+    content: '';
+    display: block;
+    width: 35%;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: .4em;
+    background: #0d0f1f;
+    animation: skillsTitleBorder .7s ease-in-out 1.85s both; }
+
+@media only screen and (min-width: 768px) {
+  #skills .s-intro .s-intro-right .s-intro-content h1 {
+    position: relative;
+    top: 10%;
+    margin-bottom: 1em;
+    font-size: 2.8em;
+    line-height: 1.15em;
+    transform: translateX(-60%); } }
+
+#skills .s-intro .s-intro-right .s-intro-content p {
+  font-family: "agendaregular";
+  font-size: 1em;
+  color: #0d0f1f;
+  text-align: left;
+  animation: fadeIn .5s linear 2.9s both; }
+  #skills .s-intro .s-intro-right .s-intro-content p.intro {
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    font-style: italic;
+    line-height: 1.2;
+    animation-delay: 2.5s; }
+
+/* =============================
+        SKILL INTRO NAV
+============================= */
+#skills .sl-slide-inner .s-skills.s-intro .s-nav.nav-bottom {
+  bottom: .5em; }
+  #skills .sl-slide-inner .s-skills.s-intro .s-nav.nav-bottom a {
+    display: inline-block;
+    width: 1.25em;
+    height: 1.25em;
+    line-height: 1.2em;
+    color: #d6d9ee;
+    background: #0d0f1f;
+    border: 2px solid #0d0f1f;
+    border-radius: 100%; }
+    #skills .sl-slide-inner .s-skills.s-intro .s-nav.nav-bottom a:hover {
+      color: #0d0f1f;
+      background: #d6d9ee;
+      transform: scale(1); }
+
+/* =============================
+        SKILLS LIST BLOCK
+============================= */
+#skills .s-list {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+#skills .s-skills {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  #skills .s-skills:nth-child(n+2) {
+    top: 100%;
+    padding: 0; }
+  #skills .s-skills.s-content {
+    display: flex;
+    z-index: 1;
+    background: #d6d9ee;
+    align-items: center; }
+    #skills .s-skills.s-content > .row {
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto; }
+
+/* =============================
+           SKILLS NAV
+============================= */
+#skills .s-skills .s-nav {
+  position: absolute;
+  width: 100%; }
+  #skills .s-skills .s-nav.nav-top {
+    top: 0; }
+  #skills .s-skills .s-nav.nav-bottom {
+    top: auto;
+    bottom: .25em; }
+  #skills .s-skills .s-nav a {
+    font-size: 3em;
+    line-height: 1;
+    color: #0d0f1f; }
+    #skills .s-skills .s-nav a:hover {
+      transform: translateX(-50%); }
+
+/* =============================
+        SKILLS LIST ICON
+============================= */
+#skills .s-skills > .row .icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1.5em; }
+  #skills .s-skills > .row .icon svg {
+    max-width: 100%;
+    fill: #0d0f1f; }
+
+#skills .s-skills.active > .row .icon svg {
+  animation: skillsBounceIn 1s ease-in-out .5s both; }
+
+/* =============================
+        SKILLS LIST INTRO
+============================= */
+#skills .s-skills > .row .s-intro {
+  margin-top: 1.5em; }
+  #skills .s-skills > .row .s-intro p {
+    font-family: 'agendaregular';
+    font-size: 1.1em;
+    color: #0d0f1f; }
+
+#skills .s-skills.active > .row .s-intro p {
+  animation: skillsMoveUp 1s ease-in-out .75s both; }
+
+#skills .s-modal-content {
+  height: 100%; }
+  #skills .s-modal-content .s-modal-left {
+    display: none;
+    float: left;
+    height: 100%;
+    padding: 0; }
+    #skills .s-modal-content .s-modal-left .row {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      align-items: center; }
+  @media only screen and (min-width: 768px) {
+    #skills .s-modal-content .s-modal-left {
+      display: block; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    #skills .s-modal-content .s-modal-left {
+      height: 35%; } }
+  #skills .s-modal-content .s-modal-right {
+    display: flex;
+    float: left;
+    height: calc(100% - (50px + 20px + 1em));
+    padding: 0;
+    margin-top: calc(50px + 20px + 1em);
+    overflow-y: auto; }
+    #skills .s-modal-content .s-modal-right .row {
+      width: 100%;
+      margin: 0;
+      text-align: left; }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    #skills .s-modal-content .s-modal-right {
+      height: 50%;
+      height: calc(70% - 2em);
+      margin-top: 2em;
+      align-items: baseline; } }
+  @media only screen and (min-width: 992px) {
+    #skills .s-modal-content .s-modal-right {
+      height: calc(100% - 2em);
+      margin-top: 2em;
+      align-items: baseline; } }
+
+@media only screen and (min-width: 768px) {
+  #skills .s-skills:nth-child(2) .s-modal-content .s-modal-right, #skills .s-skills:nth-child(3) .s-modal-content .s-modal-right {
+    align-items: baseline; }
+    #skills .s-skills:nth-child(2) .s-modal-content .s-modal-right.top, #skills .s-skills:nth-child(3) .s-modal-content .s-modal-right.top {
+      align-items: baseline; } }
+
+/* =============================
+	  BACKGROUND BLOCK LEFT
+============================= */
+#skills .s-content .s-modal-left .row {
+  background-color: #e0bd79;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#skills .s-content:nth-child(2) .s-modal-left .row {
+  background-image: url(../img/skills/modal-bg/bg-integration.jpg); }
+
+#skills .s-content:nth-child(3) .s-modal-left .row {
+  background-image: url(../img/skills/modal-bg/bg-dev.jpg); }
+
+#skills .s-content:nth-child(4) .s-modal-left .row {
+  background-image: url(../img/skills/modal-bg/bg-wordpress.jpg); }
+
+#skills .s-content:nth-child(5) .s-modal-left .row {
+  background-image: url(../img/skills/modal-bg/bg-webdesign.jpg); }
+
+/* =============================
+	    MODAL BLOCK LEFT
+============================= */
+@media only screen and (min-width: 768px) {
+  #skills .s-skills .s-modal-content .s-modal-left .row .img-skill {
+    position: relative;
+    margin: 0 auto; }
+  #skills .s-skills:nth-child(2) .s-modal-content .s-modal-left .row .img-skill {
+    position: relative;
+    margin: 0 auto; }
+    #skills .s-skills:nth-child(2) .s-modal-content .s-modal-left .row .img-skill img:nth-child(2) {
+      position: absolute;
+      display: block;
+      top: 65%;
+      left: -20%; }
+    #skills .s-skills:nth-child(2) .s-modal-content .s-modal-left .row .img-skill img:nth-child(3) {
+      position: absolute;
+      display: block;
+      top: 72%;
+      left: 27%; }
+    #skills .s-skills:nth-child(2) .s-modal-content .s-modal-left .row .img-skill img:nth-child(4) {
+      position: absolute;
+      display: block;
+      top: 65%;
+      left: 55%; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #skills .s-skills .s-modal-content .s-modal-left .row .img-skill {
+    height: 85%; }
+    #skills .s-skills .s-modal-content .s-modal-left .row .img-skill img {
+      height: 100%; } }
+
+/* =============================
+	   MODAL CLOSED BUTTON
+============================= */
+#skills .s-modal-content .modal-close {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  margin-top: 1em;
+  text-align: right; }
+  #skills .s-modal-content .modal-close:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    right: 0;
+    width: 2em;
+    height: 2px;
+    background: #e0bd79; }
+  #skills .s-modal-content .modal-close a {
+    float: none;
+    padding-right: 1em;
+    margin-right: 2em;
+    font-size: .75rem;
+    color: #e0bd79;
+    text-shadow: none;
+    text-transform: uppercase;
+    opacity: 1; }
+    #skills .s-modal-content .modal-close a:hover {
+      color: #e0bd79;
+      text-decoration: underline;
+      opacity: 1; }
+
+@media only screen and (min-width: 768px) {
+  #skills .s-modal-content .modal-close:after {
+    width: 4.5em; }
+  #skills .s-modal-content .modal-close a {
+    margin-right: 4em;
+    font-size: 1em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  #skills .s-modal-content .modal-close::after {
+    background: #0d0f1f; }
+  #skills .s-modal-content .modal-close a {
+    color: #0d0f1f; }
+    #skills .s-modal-content .modal-close a:hover {
+      color: #0d0f1f; } }
+
+/* =============================
+	     MODAL CHAPTER
+============================= */
+#skills .s-modal-content .s-modal-right .modal-chapter {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5em;
+  color: #e0bd79; }
+  #skills .s-modal-content .s-modal-right .modal-chapter span {
+    padding-left: .4em;
+    margin-left: 2.5em;
+    font-family: "agendaregular";
+    font-size: 1.5em;
+    color: #e0bd79; }
+  #skills .s-modal-content .s-modal-right .modal-chapter:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    width: 3.5em;
+    height: 2px;
+    margin-left: 0;
+    background: #e0bd79; }
+
+@media only screen and (min-width: 768px) {
+  #skills .s-modal-content .s-modal-right .modal-chapter {
+    margin-bottom: 0; }
+    #skills .s-modal-content .s-modal-right .modal-chapter span {
+      margin-left: 4em; }
+    #skills .s-modal-content .s-modal-right .modal-chapter:before {
+      width: 6em; } }
+
+/* =============================
+	       MODAL TITLE
+============================= */
+#skills .s-modal-content .s-modal-right .modal-title {
+  display: block;
+  width: 100%;
+  padding: 0 1em; }
+  #skills .s-modal-content .s-modal-right .modal-title h2 {
+    position: relative; }
+    #skills .s-modal-content .s-modal-right .modal-title h2 span:first-child {
+      display: block;
+      font-family: "arizoniaregular";
+      font-size: 3.75em;
+      color: rgba(224, 189, 121, 0.15);
+      text-align: center; }
+    #skills .s-modal-content .s-modal-right .modal-title h2 span:last-child {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      font-family: "Gloria Hallelujah", cursive;
+      font-size: 1.15em;
+      color: #e0bd79;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: auto;
+      transform: translateY(-50%); }
+
+/* =============================
+	     MODAL CONTENT
+============================= */
+#skills .s-modal-content .s-modal-right .modal-content {
+  max-width: 650px;
+  padding: 0 1em;
+  margin: 0 auto;
+  margin-top: 3.5em;
+  background: transparent;
+  border: none;
+  border-radius: 0; }
+  #skills .s-modal-content .s-modal-right .modal-content p {
+    margin-bottom: 1em;
+    font-family: "agendaregular";
+    font-size: 1em;
+    line-height: 1.5;
+    color: #d6d9ee;
+    text-align: justify; }
+
+@media only screen and (min-width: 768px) {
+  #skills .s-modal-content .s-modal-right .modal-content {
+    margin-top: 2em; } }
+
+/* ================================
+	   MODAL CONTENT LANGUANGES
+================================ */
+#skills .s-modal-content .s-modal-right .modal-content h4 {
+  margin-bottom: 1em;
+  font-family: "agendaregular";
+  font-size: 1.25em;
+  line-height: 1.5;
+  color: #e0bd79;
+  text-align: left; }
+  #skills .s-modal-content .s-modal-right .modal-content h4:after {
+    content: '';
+    display: block;
+    width: 15%;
+    height: 1px;
+    margin-top: .25em;
+    background: #e0bd79; }
+
+#skills .s-modal-content .s-modal-right .modal-content .libs {
+  margin-bottom: 1.1em !important; }
+  #skills .s-modal-content .s-modal-right .modal-content .libs div {
+    float: left;
+    margin-bottom: .75em;
+    text-align: center; }
+    #skills .s-modal-content .s-modal-right .modal-content .libs div.plus p {
+      font-size: 1.5em;
+      line-height: 72px; }
+    #skills .s-modal-content .s-modal-right .modal-content .libs div .icon {
+      width: 45px;
+      height: 45px;
+      margin: 0 auto !important; }
+      #skills .s-modal-content .s-modal-right .modal-content .libs div .icon:before {
+        font-size: 3em; }
+    #skills .s-modal-content .s-modal-right .modal-content .libs div p {
+      margin-top: .5em;
+      margin-bottom: 0;
+      font-size: 1.15em;
+      line-height: 1;
+      text-align: center;
+      text-transform: capitalize; }
+
+@media only screen and (max-width: 430px) {
+  #skills .s-modal-content .s-modal-right .modal-content .libs div {
+    height: 90px; }
+    #skills .s-modal-content .s-modal-right .modal-content .libs div.plus {
+      max-width: 100%; } }
+
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+  #skills .s-modal-content .s-modal-right .modal-content .libs div {
+    max-width: 20%;
+    height: 90px; }
+    #skills .s-modal-content .s-modal-right .modal-content .libs div.plus {
+      max-width: 100%; } }

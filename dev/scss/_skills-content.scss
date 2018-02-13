@@ -1,0 +1,164 @@
+/* =================================
+	 ANIMATION MODAL BLOCK LEFT
+================================= */
+#skills .morph-button{
+    .s-modal-content .s-modal-left > .row{
+        transition: transform .2s .2s;
+        transform: scale(0);
+    }
+
+    &.open .s-modal-content .s-modal-left > .row{
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+/* =================================
+	 ANIMATION MODAL BUTTON CLOSE
+================================= */
+#skills .morph-button .s-modal-content .modal-close{
+    &:after{
+        transition: transform .2s .35s;
+        transform: translateX(100%);
+    }
+
+    .icon-close{
+        opacity: 0;
+        transition: opacity .15s .5s;
+    }
+}
+
+
+#skills .morph-button.open .s-modal-content-1{
+    .modal-close{
+        &:after{
+            transform: translateX(0);
+        }
+
+        .icon-close{
+            opacity: 1;
+        }
+    }
+}
+
+
+
+
+
+/* =================================
+	  ANIMATION MODAL CHAPTER
+================================= */
+#skills .morph-button .s-modal-content .s-modal-right .modal-chapter{
+    &:before{
+        transition: transform .2s .6s;
+        transform: translateX(-100%);
+    }
+
+    > span{
+        opacity: 0;
+        transition: opacity .15s .75s;
+    }
+}
+
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-chapter{
+    &:before{
+        transform: translateX(0);
+    }
+
+    > span{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* =================================
+	   ANIMATION MODAL TITLE
+================================= */
+#skills .morph-button .s-modal-content .s-modal-right .modal-title > h2{
+    span:nth-child(1){
+        transition: transform .3s .95s;
+        transform: scaleX(0);
+    }
+
+    span:nth-child(2){
+        opacity: 0;
+        transition: opacity .25s 1.2s;
+    }
+}
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-title > h2{
+    span:nth-child(1){
+        transform: scaleX(1);
+    }
+
+    span:nth-child(2){
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/* =================================
+	    ANIMATION MODAL TEXT
+================================= */
+#skills .morph-button .s-modal-content .s-modal-right .modal-content > p{
+    opacity: 0;
+    transition: opacity .2s 1.3s;
+
+
+    &:first-child{
+        transition-delay: 1.45s;
+    }
+    &:nth-child(2){
+        transition-delay: 1.6s;
+    }
+    &:nth-child(3){
+        transition-delay: 1.75s;
+    }
+}
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-content > p{
+    opacity: 1;
+}
+
+
+
+
+
+/* =================================
+	    ANIMATION MODAL LIB
+================================= */
+#skills .morph-button .s-modal-content .s-modal-right .modal-content{
+    h4{
+        opacity: 0;
+        transition: opacity .2s 1.9s, transform .2s 1.9s;
+        transform: scaleX(0);
+    }
+
+    .libs > div{
+        opacity: 0;
+        transition: opacity .15s 2.05s, transform .15s 2.05s;
+        transform: scale(0);
+    }
+}
+
+#skills .morph-button.open .s-modal-content .s-modal-right .modal-content{
+    h4{
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    .libs > div{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

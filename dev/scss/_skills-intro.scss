@@ -1,0 +1,275 @@
+/* =============================
+      SKILL CONTENT BLOCK
+============================= */
+#skills .s-intro{
+    .s-intro-left, .s-intro-right{
+        float: left;
+        height: 100%;
+        padding: 0;
+    }
+
+    .s-intro-left{
+        display: none;
+        background-image: url(../img/skills-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .s-intro-right{
+        display: flex;
+        padding: 0 1em;
+        padding-top: 8em;
+        padding-bottom: 4.5em;
+
+        align-items: center;
+    }
+
+    @media only screen and (max-height: 430px){
+        .s-intro-right{
+            padding-top: 2em;
+
+            align-items: inherit;
+        }
+    }
+
+    @media only screen and (max-width: 767px){
+        .s-intro-right{
+            overflow-y: auto;
+        }
+    }
+
+    @media only screen and (min-width: 768px){
+        .s-intro-left{
+            display: block;
+        }
+
+        .s-intro-right{
+            padding-top: 0;
+            padding-left: 2em;
+        }
+    }
+}
+
+
+
+
+
+/* ================================
+     SKILL CONTENT BLOCK RIGHT
+================================ */
+#skills .s-intro .s-intro-right .s-intro-content{
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px){
+    #skills .s-intro .s-intro-right .s-intro-content{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    #skills .s-intro .s-intro-right .s-intro-content{
+        width: 75%;
+        margin: 0;
+    }
+}
+
+
+#skills .s-intro .s-intro-right .s-intro-content h1{
+    margin-bottom: 1.15em;
+    font-family: $skills-h1;
+    font-size: 2.25em;
+    color: $color-theme;
+    animation: skillsMoveUp 1s ease-in-out 1s both;
+
+    &:after{
+        content: '';
+        display: block;
+        width: 35%;
+        height: 3px;
+        margin: 0 auto;
+        margin-top: .4em;
+        background: $color-theme;
+        animation: skillsTitleBorder .7s ease-in-out 1.85s both;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #skills .s-intro .s-intro-right .s-intro-content h1{
+        position: relative;
+        top: 10%;
+        margin-bottom: 1em;
+        font-size: 2.8em;
+        line-height: 1.15em;
+        transform: translateX(-60%);
+    }
+}
+
+
+#skills .s-intro .s-intro-right .s-intro-content p{
+    font-family: $skills-p;
+    font-size: 1em;
+    color: $color-theme;
+    text-align: left;
+    animation: fadeIn .5s linear 2.9s both;
+
+    &.intro{
+        margin-bottom: 1em;
+        font-size: 1.25em;
+        font-style: italic;
+        line-height: 1.2;
+        animation-delay: 2.5s;
+    }
+}
+
+
+
+
+
+/* =============================
+        SKILL INTRO NAV
+============================= */
+#skills .sl-slide-inner .s-skills.s-intro .s-nav.nav-bottom{
+    bottom: .5em;
+
+    a{
+        display: inline-block;
+        width: 1.25em;
+        height: 1.25em;
+        line-height: 1.2em;
+        color: $color-white;
+        background: $color-theme;
+        border: 2px solid $color-theme;
+        border-radius: 100%;
+
+        &:hover{
+            color: $color-theme;
+            background: $color-white;
+            transform: scale(1);
+        }
+    }
+}
+
+
+
+
+
+/* =============================
+        SKILLS LIST BLOCK
+============================= */
+#skills .s-list{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
+#skills .s-skills{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &:nth-child(n+2){
+        top: 100%;
+        padding: 0;
+    }
+
+    &.s-content{
+        display: flex;
+        z-index: 1;
+        background: $color-white;
+
+        align-items: center;
+
+        > .row{
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+
+
+/* =============================
+           SKILLS NAV
+============================= */
+#skills .s-skills .s-nav{
+    position: absolute;
+    width: 100%;
+
+    &.nav-top{
+        top: 0;
+    }
+
+    &.nav-bottom{
+        top: auto;
+        bottom: .25em;
+    }
+
+    a{
+        font-size: 3em;
+        line-height: 1;
+        color: $color-theme;
+
+        &:hover{
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+
+
+
+
+/* =============================
+        SKILLS LIST ICON
+============================= */
+#skills .s-skills > .row{
+    .icon{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+
+        svg{
+            max-width: 100%;
+
+            fill: $color-theme;
+        }
+    }
+}
+
+#skills .s-skills.active > .row .icon svg{
+    animation: skillsBounceIn 1s ease-in-out .5s both;
+}
+
+
+
+
+
+/* =============================
+        SKILLS LIST INTRO
+============================= */
+#skills .s-skills{
+    > .row{
+        .s-intro{
+            margin-top: 1.5em;
+
+            p{
+                font-family: 'agendaregular';
+                font-size: 1.1em;
+                color: $color-theme;
+            }
+        }
+    }
+
+    &.active > .row .s-intro p{
+        animation: skillsMoveUp 1s ease-in-out .75s both;
+    }
+}

@@ -37,6 +37,14 @@ $font-family-secondary: 'Gloria Hallelujah', cursive;
 $font-family-third: 'Anton', sans-serif;
 $intro-font-family: $font-family-primary;
 $nav-links-font-family: $font-family-secondary;
+$skills-morph-button: $font-family-primary;
+$skills-h1: $font-family-third;
+$skills-p: $font-family-primary;
+$skills-modal-chapter: $font-family-primary;
+$skills-modal-title: $font-family-secondary;
+$skills-modal-title-big: 'arizoniaregular';
+$skills-modal-p: $font-family-primary;
+$skills-modal-h4: $font-family-primary;
 
 
 
@@ -47,3 +55,10 @@ $menu-trigger-top: 1.2em;
 $menu-trigger-left: 1.2em;
 $menu-toggle-size: 3em;
 $menu-toggle-line-height: 3em;
+
+
+
+
+//SKILLS
+$skills-morph-button-width: 15em;
+$skills-morph-content-width: 15em;

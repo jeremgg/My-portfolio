@@ -23,15 +23,39 @@
 
     <body>
         <!-- SVG ICONS -->
-        <svg class="hidden" xmlns="http://www.w3.org/2000/svg" version="1.1" width="800">
+        <svg class="hidden">
             <defs>
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
-                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-                </filter>
-            </defs>
+            	<symbol id="icon-integration" width="640" height="512" viewBox="0 0 640 512">
+            		<title>integration</title>
+                    <path d="M416 368l48 48 160-160-160-160-48 48 112 112z"></path>
+                    <path d="M224 144l-48-48-160 160 160 160 48-48-112-112z"></path>
+                    <path d="M350.649 75.26l34.734 9.472-95.993 352.013-34.734-9.472 95.994-352.013z"></path>
+            	</symbol>
+            	<symbol id="icon-dev" width="512" width="384" height="448" viewBox="0 0 384 448">
+            		<title>svg</title>
+                    <path d="M256 224c0-35.25-28.75-64-64-64s-64 28.75-64 64 28.75 64 64 64 64-28.75 64-64zM384 196.75v55.5c0 3.75-3 8.25-7 9l-46.25 7c-2.75 8-5.75 15.5-9.75 22.75 8.5 12.25 17.5 23.25 26.75 34.5 1.5 1.75 2.5 4 2.5 6.25s-0.75 4-2.25 5.75c-6 8-39.75 44.75-48.25 44.75-2.25 0-4.5-1-6.5-2.25l-34.5-27c-7.25 3.75-15 7-22.75 9.5-1.75 15.25-3.25 31.5-7.25 46.5-1 4-4.5 7-9 7h-55.5c-4.5 0-8.5-3.25-9-7.5l-7-46c-7.75-2.5-15.25-5.5-22.5-9.25l-35.25 26.75c-1.75 1.5-4 2.25-6.25 2.25s-4.5-1-6.25-2.75c-13.25-12-30.75-27.5-41.25-42-1.25-1.75-1.75-3.75-1.75-5.75 0-2.25 0.75-4 2-5.75 8.5-11.5 17.75-22.5 26.25-34.25-4.25-8-7.75-16.25-10.25-24.75l-45.75-6.75c-4.25-0.75-7.25-4.75-7.25-9v-55.5c0-3.75 3-8.25 6.75-9l46.5-7c2.5-8 5.75-15.5 9.75-23-8.5-12-17.5-23.25-26.75-34.5-1.5-1.75-2.5-3.75-2.5-6s1-4 2.25-5.75c6-8.25 39.75-44.75 48.25-44.75 2.25 0 4.5 1 6.5 2.5l34.5 26.75c7.25-3.75 15-7 22.75-9.5 1.75-15.25 3.25-31.5 7.25-46.5 1-4 4.5-7 9-7h55.5c4.5 0 8.5 3.25 9 7.5l7 46c7.75 2.5 15.25 5.5 22.5 9.25l35.5-26.75c1.5-1.5 3.75-2.25 6-2.25s4.5 1 6.25 2.5c13.25 12.25 30.75 27.75 41.25 42.5 1.25 1.5 1.75 3.5 1.75 5.5 0 2.25-0.75 4-2 5.75-8.5 11.5-17.75 22.5-26.25 34.25 4.25 8 7.75 16.25 10.25 24.5l45.75 7c4.25 0.75 7.25 4.75 7.25 9z"></path>
+            	</symbol>
+            	<symbol id="icon-wordpress" width="512" height="512" viewBox="0 0 512 512">
+            		<title>wordpress</title>
+                    <path d="M64 255.996c0 74.013 44.161 137.984 108.215 168.289l-91.589-244.392c-10.654 23.254-16.626 48.991-16.626 76.103zM385.614 246.564c0-23.117-8.527-39.118-15.827-51.571-9.729-15.41-18.86-28.447-18.86-43.858 0-17.187 13.383-33.188 32.243-33.188 0.852 0 1.66 0.102 2.488 0.151-34.158-30.485-79.67-49.098-129.654-49.098-67.080 0-126.093 33.523-160.422 84.284 4.505 0.141 8.753 0.227 12.356 0.227 20.077 0 51.17-2.376 51.17-2.376 10.345-0.591 11.566 14.217 1.229 15.411 0 0-10.405 1.184-21.976 1.775l69.917 202.553 42.022-122.728-29.911-79.825c-10.344-0.592-20.139-1.775-20.139-1.775-10.351-0.596-9.136-16.001 1.219-15.411 0 0 31.7 2.376 50.567 2.376 20.073 0 51.175-2.376 51.175-2.376 10.351-0.591 11.57 14.217 1.223 15.411 0 0-10.417 1.186-21.974 1.775l69.39 201.009 19.156-62.316c8.29-25.875 14.608-44.45 14.608-60.45zM259.371 272.352l-57.613 163.029c17.208 4.929 35.397 7.619 54.244 7.619 22.358 0 43.802-3.759 63.759-10.6-0.509-0.801-0.987-1.652-1.375-2.577l-59.015-157.471zM424.481 166.286c0.826 5.955 1.294 12.343 1.294 19.229 0 18.965-3.646 40.298-14.601 66.975l-58.643 165.136c57.081-32.414 95.469-92.644 95.469-161.629 0-32.515-8.53-63.080-23.519-89.711zM256 0c-141.385 0-256 114.615-256 256s114.615 256 256 256 256-114.615 256-256-114.615-256-256-256zM256 480c-123.712 0-224-100.288-224-224s100.288-224 224-224 224 100.288 224 224-100.288 224-224 224z"></path>
+            	</symbol>
+            	<symbol id="icon-webdesign" width="576" height="512" viewBox="0 0 576 512">
+            		<title>webdesign</title>
+                    <path d="M544 64h-32v-32c0-17.6-14.4-32-32-32h-448c-17.6 0-32 14.4-32 32v384c0 17.6 14.4 32 32 32h32v32c0 17.6 14.4 32 32 32h448c17.6 0 32-14.4 32-32v-384c0-17.6-14.4-32-32-32zM64 96v320h-31.943c-0.020-0.017-0.041-0.038-0.057-0.058v-383.885c0.017-0.020 0.038-0.041 0.057-0.057h447.885c0.020 0.017 0.041 0.038 0.058 0.058v31.942h-384c-17.6 0-32 14.4-32 32v0zM544 479.942c-0.017 0.020-0.038 0.041-0.058 0.058h-447.885c-0.020-0.017-0.041-0.038-0.057-0.058v-383.885c0.017-0.020 0.038-0.041 0.057-0.057h447.885c0.020 0.017 0.041 0.038 0.058 0.058v383.884z"></path>
+                    <path d="M480 176c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48z"></path>
+                    <path d="M512 448h-384v-64l112-192 128 160h32l112-96z"></path>
+            	</symbol>
+            	<symbol id="icon-webdesign">
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -15" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+            	</symbol>
+        	</defs>
         </svg>
+
+
 
 
 
@@ -190,7 +214,471 @@
                                 <!-- SKILLS -->
                                 <div id="skills" class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
                                     <div class="sl-slide-inner">
+                                        <div class="row">
+                                            <div class="row s-list">
 
+                                                <!-- Skills intro -->
+                                                <div class="col-12 s-skills s-intro">
+                                                    <div class="col-12 col-md-6 s-intro-left"></div>
+                                                    <div class="col-12 col-md-6 s-intro-right">
+                                                        <div class="s-intro-content">
+                                                            <h1>Mes Compétences</h1>
+                                                            <p class="intro">
+                                                                Se déclarer développeur web front-end, back-end ou full stack, c'est bien beau, mais encore faut-il avoir les compétences qui vont avec.
+                                                            </p>
+
+                                                            <p>
+                                                                C'est pourquoi en cliquant sur le petit bouton en forme de flèche au bas de cette page, vous découvrirez mes compétences pricipales regroupées en 4 catégories: Intégration web, Développement web, CMS Wordpress et en bonus Webdesign.
+                                                            </p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- skills intro nav -->
+                                                    <div class="s-nav nav-bottom">
+                                                        <a href="#" class="next"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div><!-- ./s-skills s-intro -->
+
+
+                                                <!-- Skills intégration -->
+                                                <div class="col-12 s-skills s-content">
+                                                    <!-- Skills intégration content -->
+                                                    <div class="row">
+                                                        <!-- icon intégration -->
+                                                        <div class="icon">
+                                                            <svg class="nav-icon"><use xlink:href="#icon-integration"></use></svg>
+                                                        </div>
+
+                                                        <!-- morhing -->
+                                                        <div class="morph-button s-title">
+                                                            <button type="button" class="btn btn-primary">intégration web</button>
+
+                                                            <!-- modal -->
+                                                            <div class="morph-content">
+                                                                <div>
+                                                                    <!-- modal content -->
+                                                                    <div class="s-modal-content s-modal-content-1">
+
+                                                                        <!-- modal close button -->
+                                                                        <div class="modal-close">
+                                                                            <a class="close icon-close" href="#">retour</a>
+                                                                        </div>
+
+                                                                        <!-- modal content bloc left -->
+                                                                        <div class="col-12 col-lg-5 s-modal-left">
+                                                                            <div class="row">
+                                                                                <div class="img-skill">
+                                                                                    <img class="img-fluid" src="img/skills/modal-deco/deco-integration.png" alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div><!-- ./s-modal-left -->
+
+                                                                        <!-- modal content bloc right -->
+                                                                        <div class="col-12 col-lg-7 s-modal-right top">
+                                                                            <div class="row">
+                                                                                <div class="modal-chapter">
+                                                                                    <span>1</span>
+                                                                                </div>
+
+                                                                                <div class="modal-title">
+                                                                                    <h2>
+                                                                                        <span>I</span>
+                                                                                        <span>intégration web</span>
+                                                                                    </h2>
+                                                                                </div>
+
+                                                                                <div class="modal-content">
+                                                                                    <p>
+                                                                                        En collaboration avec les graphistes et les webdesigners, je développe un code optimisé selon les normes de la W3C pour un rendu accessible, propre et facilement maintenable.
+                                                                                    </p>
+
+                                                                                    <p>
+                                                                                        Mes outils et technologies : HTML 5, CSS 3, Sass, javascript. Les frameworks et librairies que j'utilise le plus souvent sont : Bootstrap, Normalize, animatecss, jquery.
+                                                                                        Concernant l'editeur de code, je connais Bracket, Sublime Text mais j'ai une petite préférence pour Atom.
+                                                                                        Et pour finir j'utilise Gulp comme automatiseur de taches diverses pour permettre un gain de temps en production.
+                                                                                    </p>
+
+                                                                                    <p>
+                                                                                        L'intégration des sites web que je développe offre une navigation la plus agréable possible en proposant une intégration responsive en mobile first. Ce qui permet d'avoir la meilleur experience possible quelque soit le type de média utilisé (smartphone, tablettes, ordinateur portable ou de bureau).
+                                                                                    </p>
+
+                                                                                    <h4>Languages</h4>
+                                                                                    <div class="row icon libs">
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-html5"></span>
+                                                                                            <p>html</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-css3"></span>
+                                                                                            <p>css</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-javascript"></span>
+                                                                                            <p>javascript</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <h4>Editeurs de code</h4>
+                                                                                    <div class="row icon libs">
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-atom"></span>
+                                                                                            <p>atom</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-sublimetext"></span>
+                                                                                            <p>sublime text</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <h4>Librairies et framework</h4>
+                                                                                    <div class="row icon libs">
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-gulp"></span>
+                                                                                            <p>gulp</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-jquery"></span>
+                                                                                            <p>jquery</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-bootstrap"></span>
+                                                                                            <p>bootstrap</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-sass"></span>
+                                                                                            <p>sass</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-css32"></span>
+                                                                                            <p>csscomb</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-fa"></span>
+                                                                                            <p>font awesome</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-IcoMoon"></span>
+                                                                                            <p>icomoon</p>
+                                                                                        </div>
+
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-hammer"></span>
+                                                                                            <p>initializr</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-hammer"></span>
+                                                                                            <p>normalize</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-hammer"></span>
+                                                                                            <p>modernizr</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-hammer"></span>
+                                                                                            <p>animatecss</p>
+                                                                                        </div>
+                                                                                        <div class="col-4 col-md-2">
+                                                                                            <span class="icon icon-hammer"></span>
+                                                                                            <p>anim.js</p>
+                                                                                        </div>
+                                                                                        <div class="col-12 plus">
+                                                                                            <p>et bien d'autres...</p>
+                                                                                        </div>
+                                                                                    </div><!-- ./row icon libs -->
+                                                                                </div><!-- ./modal-content -->
+                                                                            </div>
+                                                                        </div><!-- ./s-modal-right -->
+                                                                    </div><!-- ./modal content -->
+                                                                </div>
+                                                            </div><!-- ./modal -->
+                                                        </div><!-- ./morphing -->
+
+                                                        <div class="s-intro">
+                                                            <p>Mettre en forme en front-end le visuel des webdesigner et gérer les éléments animés du site.</p>
+                                                        </div>
+                                                    </div><!-- ./Skills intégration content -->
+
+
+                                                    <!-- skills nav -->
+                                                    <div class="s-nav nav-top">
+                                                        <a href="#" class="previous"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                                    </div>
+
+                                                    <div class="s-nav nav-bottom">
+                                                        <a href="#" class="next"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div><!-- ./skill integration -->
+
+
+                                                <!-- Skills dev -->
+                                                <div class="col-12 s-skills s-content">
+                                                    <!-- Skills dev content -->
+                                                    <div class="row">
+                                                        <!-- icon dev -->
+                                                        <div class="icon">
+                                                            <svg class="nav-icon"><use xlink:href="#icon-dev"></use></svg>
+                                                        </div>
+
+                                                        <!-- morhing -->
+                                                        <div class="morph-button s-modal-content">
+                                                            <button type="button" class="btn btn-primary">développement web</button>
+
+                                                            <!-- modal -->
+                                                            <div class="morph-content">
+                                                                <div>
+                                                                    <!-- modal content -->
+                                                                    <div class="s-modal-content s-modal-content-1">
+
+                                                                        <!-- modal close button -->
+                                                                        <div class="modal-close">
+                                                                            <a class="close icon-close" href="#">retour</a>
+                                                                        </div>
+
+                                                                        <!-- modal content bloc left -->
+                                                                        <div class="col-12 col-lg-5 s-modal-left">
+                                                                            <div class="row">
+                                                                                <div class="img-skill">
+                                                                                    <img class="img-fluid" src="img/skills/modal-deco/deco-dev.png" alt="">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <!-- modal content bloc right -->
+                                                                        <div class="col-12 col-lg-7 s-modal-right">
+                                                                            <div class="row">
+                                                                                <div class="modal-chapter">
+                                                                                    <span>2</span>
+                                                                                </div>
+
+                                                                                <div class="modal-title">
+                                                                                    <h2>
+                                                                                        <span>D</span>
+                                                                                        <span>développement web</span>
+                                                                                    </h2>
+                                                                                </div>
+
+                                                                                <div class="modal-content">
+                                                                                    <p>
+                                                                                        En collaboration avec les autres développeurs front-end et back-end, je développe la partie back-end en PHP combiné à la base de données MySql pour par exemple gérer un système d'administration, un blog, un système de newsletters...</br>
+                                                                                        J'ai appris ce langage par l'intermédiaire de site web spécialisées ainsi que lors de ma formation de chef de projet multimédia à Digital Campus de bordeaux.</br>
+                                                                                        J'utilise également le gestionnaire de dépendance Composer pour installer les librairies dont j'ai besoin sur mes projets.
+                                                                                    </p>
+
+                                                                                    <p>
+                                                                                        Concernant la programmation orienté objet avec PHP (POO), je met à jours mes connaissances par l'intermédiaire de cours et tutoriaux divers disponible en libre accès sur le web comme les sites openclassroom, codeAcademy ou encore Graphikart. La prochaine étape est de bien maitriser le framework Synfony.
+                                                                                    </p>
+
+                                                                                    <p>
+                                                                                        Pratiquant une veille technologique régulièrement, je me met régulièrement à jour concernant les nouveaux outils, frameworks orientés Back-end.
+                                                                                    </p>
+
+                                                                                    <h4>Languages</h4>
+                                                                                    <div class="row icon libs">
+                                                                                        <div class="col-2">
+                                                                                            <span class="icon icon-php"></span>
+                                                                                            <p>php</p>
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <span class="icon icon-mysql"></span>
+                                                                                            <p>mysql</p>
+                                                                                        </div>
+                                                                                    </div><!-- ./row icon libs -->
+                                                                                </div><!-- ./modal-content -->
+                                                                            </div>
+                                                                        </div><!-- ./s-modal-right -->
+                                                                    </div><!-- ./modal content -->
+                                                                </div>
+                                                            </div><!-- ./modal -->
+                                                        </div><!-- ./morphing -->
+
+                                                        <div class="s-intro">
+                                                            <p>Gérer le back-end du site avec gestion de bases de données en créant un système d'administration, une gestion de membres, l'envoi de mails...</p>
+                                                        </div>
+                                                    </div><!-- ./Skills dev content -->
+
+
+                                                    <!-- skills nav -->
+                                                    <div class="s-nav nav-top">
+                                                        <a href="#" class="previous"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                                    </div>
+
+                                                    <div class="s-nav nav-bottom">
+                                                        <a href="#" class="next"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div><!-- ./skill dev -->
+
+
+                                                <!-- Skills wordpress -->
+                                                <div class="col-12 s-skills s-content">
+                                                    <!-- Skills wordpress content -->
+                                                    <div class="row">
+                                                        <!-- icon wordpress -->
+                                                        <div class="icon">
+                                                            <svg class="nav-icon"><use xlink:href="#icon-wordpress"></use></svg>
+                                                        </div>
+
+                                                        <!-- morhing -->
+                                                        <div class="morph-button s-modal-content">
+                                                            <button type="button" class="btn btn-primary">CMS Wordpress</button>
+
+                                                            <!-- modal -->
+                                                            <div class="morph-content">
+                                                                <div>
+                                                                    <!-- modal content -->
+                                                                    <div class="s-modal-content s-modal-content-1">
+
+                                                                        <!-- modal close button -->
+                                                                        <div class="modal-close">
+                                                                            <a class="close icon-close" href="#">retour</a>
+                                                                        </div>
+
+                                                                        <!-- modal content bloc left -->
+                                                                        <div class="col-12 col-lg-5 s-modal-left">
+                                                                            <div class="row">
+                                                                                <div class="img-skill">
+                                                                                    <img class="img-fluid" src="img/skills/modal-deco/deco-wordpress.png" alt="">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <!-- modal content bloc right -->
+                                                                        <div class="col-12 col-lg-7 s-modal-right">
+                                                                            <div class="row">
+                                                                                <div class="modal-chapter">
+                                                                                    <span>3</span>
+                                                                                </div>
+
+                                                                                <div class="modal-title">
+                                                                                    <h2>
+                                                                                        <span>W</span>
+                                                                                        <span>CMS Wordpress</span>
+                                                                                    </h2>
+                                                                                </div>
+
+                                                                                <div class="modal-content">
+                                                                                    <p>
+                                                                                        En collaboration avec les webdesigners et les développeur front et back, je développe des sites internet et des blogs avec le CMS Wordpress. </br>
+                                                                                        Les pricipales extentions que j'utilise le plus souvent sont : Custom Post Type UI, Advanced custom fields, contact form 7, WP-PageNavi, révolution slider, Simple Custom CSS
+                                                                                    </p>
+
+                                                                                    <p>
+                                                                                        Jai appris Wordpress par l'intermédiaire de ma formation de Chef de projet multimédia à Digital Campus de Bordeaux. J'ai pu mettre en application mes aquis lors de projets réels durant la formation.
+                                                                                    </p>
+
+                                                                                    <p>
+                                                                                        Pratiquant une veille technologique régulière, je fais en sorte de bien connaitre les plugins ou les thèmes recommandés qui permettent aux clients de pouvoir naviguer dans le back-end de façon optimal et le plus simplifié possible.
+                                                                                    </p>
+                                                                                </div><!-- ./modal-content -->
+                                                                            </div>
+                                                                        </div><!-- ./s-modal-right -->
+                                                                    </div><!-- ./modal content -->
+                                                                </div>
+                                                            </div><!-- ./modal -->
+                                                        </div><!-- ./morphing -->
+
+                                                        <div class="s-intro">
+                                                            <p>
+                                                                Créer un site internet ou un blog via le CMS le plus répandu du web "Wordpress" pour permettre aux non initiés de gérer le contenu de leurs site simplement.
+                                                            </p>
+                                                        </div>
+                                                    </div><!-- ./Skills wordpress content -->
+
+
+                                                    <!-- skills nav -->
+                                                    <div class="s-nav nav-top">
+                                                        <a href="#" class="previous"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                                    </div>
+
+                                                    <div class="s-nav nav-bottom">
+                                                        <a href="#" class="next"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div><!-- ./skill wordpress -->
+
+
+                                                <!-- Skills webdesign -->
+                                                <div class="col-12 s-skills s-content">
+                                                    <!-- Skills webdesign content -->
+                                                    <div class="row">
+                                                        <!-- icon webdesign -->
+                                                        <div class="icon">
+                                                            <svg class="nav-icon"><use xlink:href="#icon-webdesign"></use></svg>
+                                                        </div>
+
+                                                        <!-- morhing -->
+                                                        <div class="morph-button s-modal-content">
+                                                            <button type="button" class="btn btn-primary">webdesign</button>
+
+                                                            <!-- modal -->
+                                                            <div class="morph-content">
+                                                                <div>
+                                                                    <!-- modal content -->
+                                                                    <div class="s-modal-content s-modal-content-1">
+
+                                                                        <!-- modal close button -->
+                                                                        <div class="modal-close">
+                                                                            <a class="close icon-close" href="#">retour</a>
+                                                                        </div>
+
+                                                                        <!-- modal content bloc left -->
+                                                                        <div class="col-12 col-lg-5 s-modal-left">
+                                                                            <div class="row">
+                                                                                <div class="img-skill">
+                                                                                    <img class="img-fluid" src="img/skills/modal-deco/deco-webdesign.png" alt="">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <!-- modal content bloc right -->
+                                                                        <div class="col-12 col-lg-7 s-modal-right">
+                                                                            <div class="row">
+                                                                                <div class="modal-chapter">
+                                                                                    <span>4</span>
+                                                                                </div>
+
+                                                                                <div class="modal-title">
+                                                                                    <h2>
+                                                                                        <span>W</span>
+                                                                                        <span>webdesign</span>
+                                                                                    </h2>
+                                                                                </div>
+
+                                                                                <div class="modal-content">
+                                                                                    <p>
+                                                                                        Même si ce n'est pas ma spécialitée première, j'ai les compétences nécéssaires pour réaliser des webdesign et dépanner les wedesigner si besoin.
+                                                                                    </p>
+
+                                                                                    <p>
+                                                                                        Bien évidemment j'ai les connaissances necessaires sur photoshop (mon logiciel préféré) ainsi que sur illustrator.
+                                                                                    </p>
+
+                                                                                    <p>
+                                                                                        Par ailleur, je suis un passionné de digital painting dont je fais quelques travaux à titre personnel lors de mes temps libre. Les liens de certains de mes travaux sont disponible dans la partie portfolio.
+                                                                                    </p>
+                                                                                </div><!-- ./modal-content -->
+                                                                            </div>
+                                                                        </div><!-- ./s-modal-right -->
+                                                                    </div><!-- ./modal content -->
+                                                                </div>
+                                                            </div><!-- ./modal -->
+                                                        </div><!-- ./morphing -->
+
+                                                        <div class="s-intro">
+                                                            <p>Même si c'est pas ma spécialité première, je peux à l'occasion faire du webdesign en utilisant les logiciels de la suite adobe Photoshop et illustrator.</p>
+                                                        </div>
+                                                    </div><!-- ./Skills webdesign content -->
+
+
+                                                    <!-- skills nav -->
+                                                    <div class="s-nav nav-top">
+                                                        <a href="#" class="previous"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+                                                    </div>
+                                                </div><!-- ./skill webdesign -->
+                                            </div><!-- ./s-list -->
+                                        </div><!-- ./row -->
                                     </div><!-- ./sl-slide-inner -->
                                 </div><!-- ./skills -->
 
@@ -244,6 +732,8 @@
 
         <script type="text/javascript" src="js/vendor/jquery.ba-cond.min.js"></script>
         <script type="text/javascript" src="js/vendor/jquery.slitslider.js"></script>
+
+        <script type="text/javascript" src="js/vendor/uiMorphingButton_fixed.js"></script>
 
         <script type="text/javascript" src="js/main.js"></script>
     </body>

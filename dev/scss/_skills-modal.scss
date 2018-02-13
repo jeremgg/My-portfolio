@@ -1,0 +1,445 @@
+#skills .s-modal-content{
+    height: 100%;
+
+    .s-modal-left{
+        display: none;
+        float: left;
+        height: 100%;
+        padding: 0;
+
+        .row{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+
+            align-items: center;
+        }
+    }
+
+    @media only screen and (min-width: 768px){
+        .s-modal-left{
+            display: block;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px){
+        .s-modal-left{
+            height: 35%;
+        }
+    }
+
+    .s-modal-right{
+        display: flex;
+        float: left;
+        height: calc(100% - (50px + 20px + 1em));
+        padding: 0;
+        margin-top: calc(50px + 20px + 1em);   //hauteur btn trigger + margin-top btn trigger + margin-bottom btn trigger
+        overflow-y: auto;
+
+        .row{
+            width: 100%;
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 992px){
+        .s-modal-right{
+            height: 50%;
+            height: calc(70% - 2em);
+            margin-top: 2em;
+
+            align-items: baseline;
+        }
+    }
+
+    @media only screen and (min-width: 992px){
+        .s-modal-right{
+            height: calc(100% - 2em);
+            margin-top: 2em;
+
+            align-items: baseline;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #skills .s-skills{
+        &:nth-child(2), &:nth-child(3){
+            .s-modal-content .s-modal-right{
+                align-items: baseline;
+
+                &.top{
+                    align-items: baseline;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/* =============================
+	  BACKGROUND BLOCK LEFT
+============================= */
+#skills .s-content{
+    .s-modal-left .row{
+        background-color: $color-inverse;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &:nth-child(2) .s-modal-left .row{
+        background-image: url(../img/skills/modal-bg/bg-integration.jpg);
+    }
+
+    &:nth-child(3) .s-modal-left .row{
+        background-image: url(../img/skills/modal-bg/bg-dev.jpg);
+    }
+
+    &:nth-child(4) .s-modal-left .row{
+        background-image: url(../img/skills/modal-bg/bg-wordpress.jpg);
+    }
+
+    &:nth-child(5) .s-modal-left .row{
+        background-image: url(../img/skills/modal-bg/bg-webdesign.jpg);
+    }
+}
+
+
+
+
+
+/* =============================
+	    MODAL BLOCK LEFT
+============================= */
+@media only screen and (min-width: 768px){
+    #skills .s-skills{
+        .s-modal-content .s-modal-left .row .img-skill{
+            position: relative;
+            margin: 0 auto;
+        }
+
+        &:nth-child(2) .s-modal-content .s-modal-left .row .img-skill{
+            position: relative;
+            margin: 0 auto;
+
+            img{
+                &:nth-child(2){
+                    position: absolute;
+                    display: block;
+                    top: 65%;
+                    left: -20%;
+                }
+
+                &:nth-child(3){
+                    position: absolute;
+                    display: block;
+                    top: 72%;
+                    left: 27%;
+                }
+
+                &:nth-child(4){
+                    position: absolute;
+                    display: block;
+                    top: 65%;
+                    left: 55%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    #skills .s-skills .s-modal-content .s-modal-left .row .img-skill{
+        height: 85%;
+
+        img{
+            height: 100%;
+        }
+    }
+}
+
+
+
+
+
+/* =============================
+	   MODAL CLOSED BUTTON
+============================= */
+#skills .s-modal-content .modal-close{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    margin-top: 1em;
+    text-align: right;
+
+    &:after{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        right: 0;
+        width: 2em;
+        height: 2px;
+        background: $color-inverse;
+    }
+
+    a{
+        float: none;
+        padding-right: 1em;
+        margin-right: 2em;
+        font-size: .75rem;
+        color: $color-inverse;
+        text-shadow: none;
+        text-transform: uppercase;
+        opacity: 1;
+
+        &:hover{
+            color: $color-inverse;
+            text-decoration: underline;
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #skills .s-modal-content .modal-close{
+        &:after{
+            width: 4.5em;
+        }
+
+        a{
+            margin-right: 4em;
+            font-size: 1em;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    #skills .s-modal-content .modal-close{
+        &::after{
+            background: $color-theme;
+        }
+
+        a{
+            color: $color-theme;
+
+            &:hover{
+                color: $color-theme;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* =============================
+	     MODAL CHAPTER
+============================= */
+#skills .s-modal-content .s-modal-right .modal-chapter{
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5em;
+    color: $color-inverse;
+
+    span{
+        padding-left: .4em;
+        margin-left: 2.5em;
+        font-family: $skills-modal-chapter;
+        font-size: 1.5em;
+        color: $color-inverse;
+    }
+
+    &:before{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        width: 3.5em;
+        height: 2px;
+        margin-left: 0;
+        background: $color-inverse;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #skills .s-modal-content .s-modal-right .modal-chapter{
+        margin-bottom: 0;
+
+        span{
+            margin-left: 4em;
+        }
+
+        &:before{
+            width: 6em;
+        }
+    }
+}
+
+
+
+
+
+/* =============================
+	       MODAL TITLE
+============================= */
+#skills .s-modal-content .s-modal-right .modal-title{
+    display: block;
+    width: 100%;
+    padding: 0 1em;
+
+    h2{
+        position: relative;
+
+        span{
+            &:first-child{
+                display: block;
+                font-family: $skills-modal-title-big;
+                font-size: 3.75em;
+                color: rgba($color-inverse, .15);
+                text-align: center;
+            }
+
+            &:last-child{
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                font-family: $skills-modal-title;
+                font-size: 1.15em;
+                color: $color-inverse;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: auto;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+
+
+
+
+/* =============================
+	     MODAL CONTENT
+============================= */
+#skills .s-modal-content .s-modal-right .modal-content{
+    max-width: 650px;
+    padding: 0 1em;
+    margin: 0 auto;
+    margin-top: 3.5em;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+
+    p{
+        margin-bottom: 1em;
+        font-family: $skills-modal-p;
+        font-size: 1em;
+        line-height: 1.5;
+        color: $color-white;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #skills .s-modal-content .s-modal-right .modal-content{
+        margin-top: 2em;
+    }
+}
+
+
+
+
+
+/* ================================
+	   MODAL CONTENT LANGUANGES
+================================ */
+#skills .s-modal-content .s-modal-right .modal-content{
+    h4{
+        margin-bottom: 1em;
+        font-family: $skills-modal-h4;
+        font-size: 1.25em;
+        line-height: 1.5;
+        color: $color-inverse;
+        text-align: left;
+
+        &:after{
+            content: '';
+            display: block;
+            width: 15%;
+            height: 1px;
+            margin-top: .25em;
+            background: $color-inverse;
+        }
+    }
+
+    .libs{
+        margin-bottom: 1.1em !important;
+
+        div{
+            float: left;
+            margin-bottom: .75em;
+            text-align: center;
+
+            &.plus p{
+                font-size: 1.5em;
+                line-height: 72px;
+            }
+
+            .icon{
+                width: 45px;
+                height: 45px;
+                margin: 0 auto!important;
+
+                &:before{
+                    font-size: 3em;
+                }
+            }
+
+            p{
+                margin-top: .5em;
+                margin-bottom: 0;
+                font-size: 1.15em;
+                line-height: 1;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 430px){
+    #skills .s-modal-content .s-modal-right .modal-content{
+        .libs div{
+            height: 90px;
+
+            &.plus{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 430px) and (max-width: 768px){
+    #skills .s-modal-content .s-modal-right .modal-content{
+        .libs div{
+            max-width: 20%;
+            height: 90px;
+
+            &.plus{
+                max-width: 100%;
+            }
+        }
+    }
+}
